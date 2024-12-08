@@ -4,9 +4,14 @@
     <title>Tags on Bateman&#39;s Blog</title>
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Bateman&#39;s Blog</description>
+    <image>
+      <title>Bateman&#39;s Blog</title>
+      <url>https://i.postimg.cc/7hwBy7VS/calcr.png</url>
+      <link>https://i.postimg.cc/7hwBy7VS/calcr.png</link>
+    </image>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh</language>
-    <copyright>©2024 Batemen&amp;rsquo;s Blog</copyright>
+    <copyright>©2024 Bateman&amp;rsquo;s Blog</copyright>
     <lastBuildDate>Sun, 08 Dec 2024 18:05:53 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
