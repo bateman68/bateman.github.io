@@ -10,10 +10,10 @@
     <lastBuildDate>Sun, 08 Dec 2024 18:05:53 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>通用技术</title>
-      <link>http://localhost:1313/categories/%E9%80%9A%E7%94%A8%E6%8A%80%E6%9C%AF/</link>
+      <title>Java基础</title>
+      <link>http://localhost:1313/categories/java%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 08 Dec 2024 18:05:53 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E9%80%9A%E7%94%A8%E6%8A%80%E6%9C%AF/</guid>
+      <guid>http://localhost:1313/categories/java%E5%9F%BA%E7%A1%80/</guid>
       <description></description>
     </item>
   </channel>

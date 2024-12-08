@@ -9,6 +9,7 @@ tags = ["Java基础", "八股文"]
 ## String、StringBuffer、StringBuilder区别
 ### 1.String
 * **性质：不可变（Immutable）**
+	
 	* 一旦创建，字符串的内容无法改变。每次对String对象进行修改都会创建一个新的对象。
 * **适用场景**
 	* 字符串内容很少变化的场景，如字符串操作。
