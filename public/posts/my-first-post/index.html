@@ -6,25 +6,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
 <title>My First Post | Bateman&#39;s Blog</title>
-<meta name="keywords" content="博客搭建, Bilibili">
-<meta name="description" content="这是我的第一篇文章
-行内数学公式：$a^2 &#43; b^2 = c^2$。
-块公式，
-$$
-a^2 &#43; b^2 = c^2
-$$
+<meta name="keywords" content="Java基础, 八股文">
+<meta name="description" content="String、StringBuffer、StringBuilder区别
+1.String
 
-$$
-\boldsymbol{x}_{i&#43;1}&#43;\boldsymbol{x}_{i&#43;2}=\boldsymbol{x}_{i&#43;3}
-$$
 
-1.post-content pre,
-2code {
-3  font-family: &#34;JetBrains Mono&#34;, monospace;
-4  font-size: 1rem;
-5  line-height: 1.2;
-6}
-">
+性质：不可变（Immutable）
+
+一旦创建，字符串的内容无法改变。每次对String对象进行修改都会创建一个新的对象。
+
+
+
+适用场景
+
+字符串内容很少变化的场景，如字符串操作。
+
+
+
+优点">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/my-first-post/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.2f483396107a34b7d8f4ea41eac1552729ad9f77e157d17b9cee9a7ab4193882.css" integrity="sha256-L0gzlhB6NLfY9OpB6sFVJymtn3fhV9F7nO6aerQZOII=" rel="preload stylesheet" as="style">
@@ -197,32 +196,71 @@ code.has-jax {
 
 </div>
   </header> 
-  <div class="post-content"><p>这是我的第一篇文章</p>
-<p>行内数学公式：$a^2 + b^2 = c^2$。</p>
-<p>块公式，</p>
-<p>$$
-a^2 + b^2 = c^2
-$$</p>
-<div>
-$$
-\boldsymbol{x}_{i+1}+\boldsymbol{x}_{i+2}=\boldsymbol{x}_{i+3}
-$$
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">.</span><span class="nc">post-content</span> <span class="nt">pre</span><span class="o">,</span>
-</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nt">code</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">3</span><span class="cl">  <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;JetBrains Mono&#34;</span><span class="p">,</span> <span class="kc">monospace</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln">4</span><span class="cl">  <span class="k">font-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln">5</span><span class="cl">  <span class="k">line-height</span><span class="p">:</span> <span class="mf">1.2</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p><img alt="moon" loading="lazy" src="/Users/weibin/Downloads/picture/moon.jpg"></p>
+  <div class="post-content"><h2 id="stringstringbufferstringbuilder区别">String、StringBuffer、StringBuilder区别<a hidden class="anchor" aria-hidden="true" href="#stringstringbufferstringbuilder区别">#</a></h2>
+<h3 id="1string">1.String<a hidden class="anchor" aria-hidden="true" href="#1string">#</a></h3>
+<ul>
+<li>
+<p><strong>性质：不可变（Immutable）</strong></p>
+<ul>
+<li>一旦创建，字符串的内容无法改变。每次对String对象进行修改都会创建一个新的对象。</li>
+</ul>
+</li>
+<li>
+<p><strong>适用场景</strong></p>
+<ul>
+<li>字符串内容很少变化的场景，如字符串操作。</li>
+</ul>
+</li>
+<li>
+<p><strong>优点</strong></p>
+<ul>
+<li>线程安全，字符串常量池优化性能</li>
+<li>使用时简单直观</li>
+</ul>
+</li>
+<li>
+<p><strong>缺点</strong></p>
+<ul>
+<li>每次修改都会创建新对象，占用更多内存，性能较低。</li>
+</ul>
+</li>
+<li>
+<p><strong>示例</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">String</span><span class="w"> </span><span class="n">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Hello&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="n">str</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&#34; World&#34;</span><span class="p">;</span><span class="w"> </span><span class="c1">// 创建了新的字符串对象</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>常用方法</strong></p>
+<ol>
+<li>**length()：**返回字符串的长度。</li>
+<li>**charAt(int index)：**返回指定索引位置的字符。</li>
+<li>**concat(String str)：**将指定的字符串连接到原字符串的末尾。</li>
+<li>**equals(Object obj)：**判断字符串是否与指定对象相等。</li>
+<li>**equalsIgnoreCase(String str)：**忽略大小写比较字符串是否相等。</li>
+<li>**isEmpty()：**判断字符串是否为空。</li>
+<li>**contains(CharSequence sequence)：**判断字符串是否包含指定的字符序列。</li>
+<li>**indexOf(String str)：**返回指定字符串在原字符串中第一次出现的位置索引。</li>
+<li>**lastIndexOf(String str)：**返回指定字符串在原字符串中最后一次出现的位置索引。</li>
+<li>**substring(int beginIndex)：**截取从指定索引开始到字符串末尾的子字符串。</li>
+<li>**substring(int beginIndex, int endIndex)：**截取指定索引范围的子字符串。</li>
+<li>**toLowerCase()：**将字符串转换为小写。</li>
+<li>**toUpperCase()：**将字符串转换为大写。</li>
+<li>**trim()：**去除字符串两端的空白字符。</li>
+<li>**split(String regex)：**根据指定的正则表达式将字符串拆分为字符串数组。</li>
+<li>**replace(char oldChar, char newChar)：**替换字符串中的字符。</li>
+<li>**startsWith(String prefix)：**判断字符串是否以指定的前缀开始。</li>
+<li>**endsWith(String suffix)：**判断字符串是否以指定的后缀结尾。</li>
+</ol>
+</li>
+</ul>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a></li>
-      <li><a href="http://localhost:1313/tags/bilibili/">Bilibili</a></li>
+      <li><a href="http://localhost:1313/tags/java%E5%9F%BA%E7%A1%80/">Java基础</a></li>
+      <li><a href="http://localhost:1313/tags/%E5%85%AB%E8%82%A1%E6%96%87/">八股文</a></li>
     </ul>
   </footer>
 </article>
