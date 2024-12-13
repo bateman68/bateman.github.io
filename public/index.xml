@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bateman&#39;s Blog</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on Bateman&#39;s Blog</description>
-    <image>
-      <title>Bateman&#39;s Blog</title>
-      <url>https://i.postimg.cc/7hwBy7VS/calcr.png</url>
-      <link>https://i.postimg.cc/7hwBy7VS/calcr.png</link>
-    </image>
-    <generator>Hugo -- 0.139.3</generator>
+    <generator>Hugo</generator>
     <language>zh</language>
-    <copyright>©2024 Bateman&amp;rsquo;s Blog</copyright>
+    <copyright>[©2024 Bateman&#39;s Blog](https://bateman68.github.io/)</copyright>
     <lastBuildDate>Sun, 08 Dec 2024 18:05:53 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -19,23 +14,7 @@
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Sun, 08 Dec 2024 18:05:53 +0800</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;stringstringbufferstringbuilder区别&#34;&gt;String、StringBuffer、StringBuilder区别&lt;/h2&gt;
-&lt;h3 id=&#34;1string&#34;&gt;1.String&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;性质：不可变（Immutable）&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;一旦创建，字符串的内容无法改变。每次对String对象进行修改都会创建一个新的对象。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;字符串内容很少变化的场景，如字符串操作。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;stringstringbufferstringbuilder区别&#34;&gt;String、StringBuffer、StringBuilder区别&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1string&#34;&gt;1.String&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;性质：不可变（Immutable）&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;一旦创建，字符串的内容无法改变。每次对String对象进行修改都会创建一个新的对象。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;字符串内容很少变化的场景，如字符串操作。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>关于</title>
@@ -43,6 +22,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>about</description>
+    </item>
+    <item>
+      <title>归档</title>
+      <link>http://localhost:1313/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archives/</guid>
+      <description>archives</description>
+    </item>
+    <item>
+      <title>搜索</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description>search</description>
     </item>
   </channel>
 </rss>
