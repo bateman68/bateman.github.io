@@ -44,7 +44,3 @@ tags = ["Java基础", "八股文"]
 	16. **replace(char oldChar, char newChar)：**替换字符串中的字符。
 	17. **startsWith(String prefix)：**判断字符串是否以指定的前缀开始。
 	18. **endsWith(String suffix)：**判断字符串是否以指定的后缀结尾。
-
-
-
-![image-20241212222045708](/three-feture.png)
